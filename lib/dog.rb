@@ -66,6 +66,7 @@ class Dog
     else 
         find_dogs = find_dogs[0]
         find_dogs = Dog.new(id: find_dogs[0], name: find_dogs[1], breed: find_dogs[2])
+        binding.pry
     end
     find_dogs
   end  
