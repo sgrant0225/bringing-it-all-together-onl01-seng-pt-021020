@@ -55,7 +55,7 @@ class Dog
     self.create(hash)
   end
   
-  def self.find_by_id(id_x) 
+  def self.find_by_id(id_x) #pass in the id
     dog = DB[:conn].execute("select * from dogs where id = ?", id_x).first
     dog = Dog.new(id: dog[0], name: dog[1], breed: dog[2])
      binding.pry
