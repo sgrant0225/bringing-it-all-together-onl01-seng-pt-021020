@@ -48,6 +48,7 @@ class Dog
   
  #this method convert what the database gives us into a object.we're reading data from SQLite and temporarily representing that data in Ruby
   def self.new_from_db(row)
+    
     # hash = {
     #   name: row[1],
     #   breed: row[2]
