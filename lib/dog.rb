@@ -58,8 +58,8 @@ class Dog
   def self.find_by_id(id_x) #pass in the id_x parameter
     dog = DB[:conn].execute("select * from dogs where id = ?", id_x).first #pass it in here #.first pulls out the 1st element
     dog = Dog.new(id: dog[0], name: dog[1], breed: dog[2])
+    binding.pry
     dog
-   binding.pry
   end  
   
   
